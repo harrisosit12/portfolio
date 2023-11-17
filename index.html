@@ -36,61 +36,110 @@
   <body>
 
     <script>
-          //animation on scroll
+          // //animation on scroll
           
+          // AOS.init({
+          //   easing: 'ease-in-out-back',
+          //   duration: 800,
+          // });
+
+          // //jquery filter
+          // $(document).ready(function() {
+
+          //   $(".filter-button").click(function() {
+          //     var value = $(this).attr('data-filter');
+
+          //     if (value == "all") {
+          //       $('.filter').show();
+          //     } else {
+          //       $(".filter").not('.' + value).hide();
+          //       $('.filter').filter('.' + value).show();
+
+          //     }
+          //   });
+
+          //   if ($(".filter-button").removeClass("active")) {
+          //     $(this).removeClass("active");
+          //   }
+          //   $(this).addClass("active");
+
+          // });
+
           AOS.init({
-            easing: 'ease-in-out-back',
-            duration: 800,
-          });
+  easing: 'ease-in-out-back',
+  duration: 800,
+});
 
-          //jquery filter
-          $(document).ready(function() {
+// jQuery filter
+$(document).ready(function() {
 
-            $(".filter-button").click(function() {
-              var value = $(this).attr('data-filter');
+  $(".filter-button").click(function() {
+    var value = $(this).attr('data-filter');
 
-              if (value == "all") {
-                $('.filter').show();
-              } else {
-                $(".filter").not('.' + value).hide();
-                $('.filter').filter('.' + value).show();
+    if (value == "all") {
+      $('.filter').show();
+    } else {
+      $(".filter").not('.' + value).hide();
+      $('.filter').filter('.' + value).show();
+    }
 
-              }
-            });
+    // Adjust active class for filter buttons
+    $(".filter-button").removeClass("active");
+    $(this).addClass("active");
+  });
 
-            if ($(".filter-button").removeClass("active")) {
-              $(this).removeClass("active");
-            }
-            $(this).addClass("active");
-
-          });
+});
         
     </script>
 
     <section class="header1 cid-rKLv7rpBwr mbr-fullscreen" id="header16-l">
-          <div class="container">
-            <div class="row justify-content-md-center">
-              <div class="col-md-10 align-center">
-                <h3 class="mbr-section-subtitle mbr-light pb-3 mbr-fonts-style display-2" data-aos="fade-down" data-aos-delay="500" data-aos-mirror="true">
-                  Hello, 
-                  <span data-aos = "fade-down" data-aos-delay="1400" data-aos-mirror = "true"> I'm</span>         
-                  <b style = "border-style: solid; border-color: #f7444e;" 
-                  data-aos = "fade-up" data-aos-delay="1700" data-aos-mirror = "true">
-                  Harris Osit
-                </b>                             
-                <br>
-                <span class="mbr-section-subtitle mbr-light pb-3 mbr-fonts-style display-2" data-aos = "fade-down" data-aos-delay="2700" data-aos-mirror = "true">
-                  I create things for the web.
-                </h3>
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-10 align-center">
+        <h3 class="mbr-section-subtitle mbr-light pb-3 mbr-fonts-style display-2" 
+            data-aos="fade-down" 
+            data-aos-delay="500" 
+            data-aos-mirror="true">
+          Hello, 
+          <span data-aos="fade-down" 
+                data-aos-delay="1400" 
+                data-aos-mirror="true">
+            I'm
+          </span>         
+          <b style="border-style: solid; border-color: #f7444e;" 
+             data-aos="fade-up" 
+             data-aos-delay="1700" 
+             data-aos-mirror="true">
+            Harris Osit
+          </b>
+          <br>
+          <span class="mbr-section-subtitle mbr-light pb-3 mbr-fonts-style display-2" 
+                data-aos="fade-down" 
+                data-aos-delay="2700" 
+                data-aos-mirror="true">
+            I create things for the web.
+          </span>
+        </h3>
 
-                <div class="mbr-section-btn" data-aos="fade-up" data-aos-delay="3000">
-                  <a href="index.html#projects" class="btn btn-md btn-white-outline display-4" data-aos-mirror="true">VIEW MY WORKS<img class="lozad img-responsive arrow ml-2" src="assets/images/next.png" width = "15px" height = "15px" alt=""></a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="mbr-section-btn" 
+             data-aos="fade-up" 
+             data-aos-delay="3000">
+          <a href="index.html#projects" 
+             class="btn btn-md btn-white-outline display-4" 
+             data-aos-mirror="true">
+            VIEW MY WORKS
+            <img class="lozad img-responsive arrow ml-2" 
+                 src="assets/images/next.png" 
+                 width="15px" 
+                 height="15px" 
+                 alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    </section>
 
     <section class="menu cid-rKLudxOrkS" once="menu" id="menu2-k">
 
@@ -145,14 +194,13 @@
               <h2 class="mbr-section-title pb-3 pt-5 mbr-fonts-style display-2" data-aos="fade-down" data-aos-delay="500"><strong><em>
                 <u>Personal Projects</u></em></strong>
               </h2>
-
               <div class="container timelines-container reverseTimeline" mbr-timelines="">
                 <!--1-->
                 <div class="row timeline-element reverse">
                   <div class="timeline-date-panel col-xs-12 col-md-6 align-left">
                     <div class="time-line-date-content" data-aos="fade-left" data-aos-delay="500">
                       <p class="mbr-timeline-date mbr-fonts-style display-5">
-                        <em>Gradzgate <br> 2017-2018</em>
+                        <em>Gradzgate</em>
                         <br>
                       </p>
                     </div>
@@ -206,7 +254,7 @@
                   <div class="timeline-date-panel col-xs-12 col-md-6 align-left">
                     <div class="time-line-date-content" data-aos="fade-right" data-aos-delay="500">
                       <p class="mbr-timeline-date mbr-fonts-style display-5">
-                        <em>Flex <br> 2019 Apr-May</em></p>
+                        <em>Flex</em></p>
                       </div>
                     </div>
                     <span class="iconBackground"></span>
@@ -232,7 +280,7 @@
                                   <p style="color: #f7f8f3; font-size: 18px" class ="mbr-fonts-style display-5">
                                     <u>
                                     Flex</u> is a <i>mockup</i> landing page, to simulate a fashion online shop.
-                                    <a class="text-white" href="https://flex-shop.vercel.app/" target="_blank"><br><u> Visit Site ►</u></a>
+                                    <a class="text-white" href="https://flex-shop.vercel.app/" target="_blank"><br><br><u> Visit Site ►</u></a>
                                   </p>
                                 </div>
                                 <div class="modal-footer" class="text-center d-none">
@@ -251,11 +299,12 @@
                       </div>
                     </div>
                 </div>
-                  <div class="row timeline-element reverse">
+                <!--3-->
+                <div class="row timeline-element reverse">
                     <div class="timeline-date-panel col-xs-12 col-md-6  align-left">
                       <div class="time-line-date-content" data-aos="fade-left" data-aos-delay="500">
                         <p class="mbr-timeline-date mbr-fonts-style display-5">
-                          <em>Laptop Issuance Manager <br> 2019 May-June</em></p>
+                          <em>Laptop Issuance Manager</em></p>
                         </div>
                       </div>
                       <span class="iconBackground"></span>
@@ -331,13 +380,13 @@
                             </div>
                           </div>
                         </div>
-                      </div>
-
-                      <div class="row timeline-element separline">
+                </div>
+                <!--4-->
+                <div class="row timeline-element separline">
                         <div class="timeline-date-panel col-xs-12 col-md-6 align-center">
                           <div class="time-line-date-content" data-aos="fade-right" data-aos-delay="500">
                             <p class="mbr-timeline-date mbr-fonts-style display-5"><em>
-                              Function Hall Booking Manager <br> 2019 Jul-Aug</em></p>
+                              Function Hall Booking Manager</em></p>
                             </div>
                           </div>
                           <span class="iconBackground"></span>
@@ -421,9 +470,58 @@
                               </div>
                             </div>
                           </div>
-                      </div>
+                </div>
+                <!--5-->
+                <div class="row timeline-element reverse">
+                  <div class="timeline-date-panel col-xs-12 col-md-6 align-left">
+                    <div class="time-line-date-content" data-aos="fade-right" data-aos-delay="500">
+                      <p class="mbr-timeline-date mbr-fonts-style display-5">
+                        <em>Fast Math</em></p>
                       </div>
                     </div>
+                    <span class="iconBackground"></span>
+                    <div class="col-xs-12 col-md-6 align-right">
+                      <div class="timeline-text-content" data-aos="fade-left" data-aos-delay="500">
+                        <div class="mbr-figure pr-lg-7" style="width: 100%;">
+                          <a>
+                            <img class="lozad img-responsive" src="assets/images/arithmetic.png" alt="" title="" data-toggle="modal" data-target="#arithmetic">
+                          </a>
+                          <!-- Modal -->
+                          <div class="modal fade" id="arithmetic" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title mbr-fonts-style display-2" style="color: #f7f8f3;" id="exampleModalLongTitle"><strong><em><b>Fast Math</b></em></strong></h5>
+                                  <button type="button" class="close" style="color: #f7444e" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <img class="lozad img-responsive" src="assets/images/arithmetic.png">
+                                  <br>
+                                  <p style="color: #f7f8f3; font-size: 18px" class ="mbr-fonts-style display-5">
+                                    <u>
+                                    Fast Math</u> is a simple zetamac arithmetic clone.
+                                    <a class="text-white" href="https://arithmetic-zustand.vercel.app/" target="_blank"><br><u> Visit Site ►</u></a>
+                                  </p>
+                                </div>
+                                <div class="modal-footer" class="text-center d-none">
+                                  <p style="color: #f7f8f3; font-size: 15px" class = "mbr-fonts-style display-5 text-left">                                 
+                                    <u>#HTML</u>
+                                    <u>#CSS </u>
+                                    <u>#ReactJS </u>                         
+                                    <u>#Zustand</u>                          
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
     </section>
 
     <section class="timeline1 cid-rKLgBY3TTT" id="tutorials">
@@ -470,8 +568,14 @@
                                 </p>
                               </div>
                               <div class="modal-footer" class="text-center">
-                                <p style="color: #f7f8f3; font-size: 15px" class = "mbr-fonts-style display-5 text-left">
-                                  <u>Environment:</u> React-Oauth/Google, SanityIO, Axios, Zustand. NextJS, TypeScript, ReactJS
+                                <p style="color: #f7f8f3; font-size: 15px" class = "mbr-fonts-style display-5 text-left">                
+                                    <u>#React-Oauth/Google</u>
+                                    <u>#SanityIO </u>
+                                    <u>#Axios </u>                         
+                                    <u>#Zustand</u>
+                                    <u>#NextJS</u>
+                                    <u>#TypeScript</u>
+                                    <u>#ReactJS</u>
                                 </p>
                               </div>
 
@@ -518,8 +622,11 @@
                                   </p>
                                 </div>
                                 <div class="modal-footer" class="text-center d-none">
-                                  <p style="color: #f7f8f3; font-size: 15px" class = "mbr-fonts-style display-5 text-left">
-                                    <u>Environment:</u> HTML5/CSS, Syncfusion, ReactJS
+                                  <p style="color: #f7f8f3; font-size: 15px" class = "mbr-fonts-style display-5 text-left">        
+                                    <u>#HTML</u>
+                                    <u>#CSS </u>
+                                    <u>#Syncfusion </u>   
+                                    <u>#ReactJS</u>
                                   </p>
                                 </div>
                               </div>
@@ -601,8 +708,14 @@
 
                                       </div>
                                       <div class="modal-footer" class="text-center">
-                                        <p style="color: #f7f8f3; font-size: 15px" class = "mbr-fonts-style display-5 text-left">
-                                          <u>Environment:</u> Stripe, NextJS, Vite, TailwindCSS, TypeScript, ReactJS, SanityIO.
+                                        <p style="color: #f7f8f3; font-size: 15px" class = "mbr-fonts-style display-5 text-left">                                          
+                                          <u>#Stripe</u>
+                                          <u>#NextJS </u>
+                                          <u>#Vite </u>                         
+                                          <u>#TailwindCSS</u>
+                                          <u>#SanityIO</u>
+                                          <u>#TypeScript</u>
+                                          <u>#ReactJS</u>
                                         </p>
                                       </div>
                                     </div>
@@ -648,7 +761,13 @@
                                 </div>
                                 <div class="modal-footer" class="text-center d-none">
                                   <p style="color: #f7f8f3; font-size: 15px" class = "mbr-fonts-style display-5 text-left">
-                                    <u>Environment:</u> HTML5, MaterialUI, ReactJS, RapidAPI, Vercel, Moment.
+                            
+                                    <u>#HTML5</u>
+                                    <u>#MaterialUI </u>
+                                    <u>#RapidAPI </u>                         
+                                    <u>#Vercel</u>
+                                    <u>#Moment</u>                       
+                                    <u>#ReactJS</u>
                                   </p>
                                 </div>
                               </div>
